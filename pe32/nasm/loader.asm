@@ -8,4 +8,5 @@ dw 0x8664                   ; Machine (AMD64)
 dw 0x01                     ; NumberOfSections (1)
 dd 0x00                     ; TimeDateStamp (0)
 dd 0x00                     ; PointerToSymbolTable
+dd 0x00                     ; NumberOfSymbols
 times 1024 - ($ - $$) db 0

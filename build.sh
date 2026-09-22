@@ -5,7 +5,7 @@ LOADER="loader.efi"
 ROOT="$(cd "$(dirname "$0")" && pwd)"
 MANUAL="$ROOT/pe32/manual"
 NASM="$ROOT/pe32/nasm"
-LENGTH=80
+LENGTH=96
 
 cd "$MANUAL"
 ./loader.sh
