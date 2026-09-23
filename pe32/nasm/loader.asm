@@ -9,4 +9,5 @@ dw 0x01                     ; NumberOfSections (1)
 dd 0x00                     ; TimeDateStamp (0)
 dd 0x00                     ; PointerToSymbolTable
 dd 0x00                     ; NumberOfSymbols
+dw 0x70                     ; SizeOfOptionalHeader (112)
 times 1024 - ($ - $$) db 0
