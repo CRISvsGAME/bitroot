@@ -11,4 +11,5 @@ dd 0x00                     ; PointerToSymbolTable
 dd 0x00                     ; NumberOfSymbols
 dw 0x70                     ; SizeOfOptionalHeader (112)
 dw 0x02                     ; Characteristics (IMAGE_FILE_EXECUTABLE_IMAGE)
+dw 0x020B                   ; Magic (PE32+)
 times 1024 - ($ - $$) db 0
