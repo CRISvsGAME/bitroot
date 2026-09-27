@@ -15,4 +15,5 @@ dw 0x020B                   ; Magic (PE32+)
 db 0x00                     ; MajorLinkerVersion
 db 0x00                     ; MinorLinkerVersion
 dd 0x00                     ; SizeOfCode
+dd 0x00                     ; SizeOfInitializedData
 times 1024 - ($ - $$) db 0
