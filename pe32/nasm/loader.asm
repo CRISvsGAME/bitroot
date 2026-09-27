@@ -16,4 +16,5 @@ db 0x00                     ; MajorLinkerVersion
 db 0x00                     ; MinorLinkerVersion
 dd 0x00                     ; SizeOfCode
 dd 0x00                     ; SizeOfInitializedData
+dd 0x00                     ; SizeOfUninitializedData
 times 1024 - ($ - $$) db 0
