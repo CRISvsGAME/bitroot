@@ -18,4 +18,5 @@ dd 0x00                     ; SizeOfCode
 dd 0x00                     ; SizeOfInitializedData
 dd 0x00                     ; SizeOfUninitializedData
 dd 0x00                     ; AddressOfEntryPoint
+dd 0x00                     ; BaseOfCode
 times 1024 - ($ - $$) db 0
