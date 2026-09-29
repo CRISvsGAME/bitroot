@@ -19,4 +19,5 @@ dd 0x00                     ; SizeOfInitializedData
 dd 0x00                     ; SizeOfUninitializedData
 dd 0x00                     ; AddressOfEntryPoint
 dd 0x00                     ; BaseOfCode
+dq 0x00                     ; ImageBase
 times 1024 - ($ - $$) db 0
