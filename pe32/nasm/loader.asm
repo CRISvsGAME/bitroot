@@ -20,5 +20,6 @@ dd 0x00                     ; SizeOfUninitializedData
 dd 0x00                     ; AddressOfEntryPoint
 dd 0x00                     ; BaseOfCode
 dq 0x00                     ; ImageBase
-dd 0x1000                   ; SectionAlignment
+dd 0x1000                   ; SectionAlignment (4096)
+dd 0x200                    ; FileAlignment (512)
 times 1024 - ($ - $$) db 0
