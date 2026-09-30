@@ -24,4 +24,6 @@ dd 0x1000                   ; SectionAlignment (4096)
 dd 0x200                    ; FileAlignment (512)
 dw 0x00                     ; MajorOperatingSystemVersion
 dw 0x00                     ; MinorOperatingSystemVersion
+dw 0x00                     ; MajorImageVersion
+dw 0x00                     ; MinorImageVersion
 times 1024 - ($ - $$) db 0
