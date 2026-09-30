@@ -22,4 +22,6 @@ dd 0x00                     ; BaseOfCode
 dq 0x00                     ; ImageBase
 dd 0x1000                   ; SectionAlignment (4096)
 dd 0x200                    ; FileAlignment (512)
+dw 0x00                     ; MajorOperatingSystemVersion
+dw 0x00                     ; MinorOperatingSystemVersion
 times 1024 - ($ - $$) db 0
