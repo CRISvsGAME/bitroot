@@ -21,9 +21,11 @@ dd 0x00                     ; AddressOfEntryPoint
 dd 0x00                     ; BaseOfCode
 dq 0x00                     ; ImageBase
 dd 0x1000                   ; SectionAlignment (4096)
-dd 0x200                    ; FileAlignment (512)
+dd 0x0200                   ; FileAlignment (512)
 dw 0x00                     ; MajorOperatingSystemVersion
 dw 0x00                     ; MinorOperatingSystemVersion
 dw 0x00                     ; MajorImageVersion
 dw 0x00                     ; MinorImageVersion
+dw 0x00                     ; MajorSubsystemVersion
+dw 0x00                     ; MinorSubsystemVersion
 times 1024 - ($ - $$) db 0
