@@ -29,3 +29,4 @@ printf '\x00\x00\x00\x00' | dd of="$LOADER" bs=1 seek=128 conv=notrunc
 printf '\x00\x00\x00\x00' | dd of="$LOADER" bs=1 seek=132 conv=notrunc
 printf '\x00\x00\x00\x00' | dd of="$LOADER" bs=1 seek=136 conv=notrunc
 printf '\x00\x00\x00\x00' | dd of="$LOADER" bs=1 seek=140 conv=notrunc
+printf '\x00\x00\x00\x00' | dd of="$LOADER" bs=1 seek=144 conv=notrunc

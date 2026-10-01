@@ -29,4 +29,5 @@ dw 0x00                     ; MinorImageVersion
 dw 0x00                     ; MajorSubsystemVersion
 dw 0x00                     ; MinorSubsystemVersion
 dd 0x00                     ; Win32VersionValue
+dd 0x00                     ; SizeOfImage
 times 1024 - ($ - $$) db 0
