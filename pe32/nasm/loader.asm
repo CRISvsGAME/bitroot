@@ -28,4 +28,5 @@ dw 0x00                     ; MajorImageVersion
 dw 0x00                     ; MinorImageVersion
 dw 0x00                     ; MajorSubsystemVersion
 dw 0x00                     ; MinorSubsystemVersion
+dd 0x00                     ; Win32VersionValue
 times 1024 - ($ - $$) db 0
