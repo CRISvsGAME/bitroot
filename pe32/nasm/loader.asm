@@ -35,4 +35,5 @@ dd 0x00                     ; CheckSum
 dw 0x0A                     ; Subsystem (IMAGE_SUBSYSTEM_EFI_APPLICATION)
 dw 0x00                     ; DllCharacteristics
 dq 0x00                     ; SizeOfStackReserve
+dq 0x00                     ; SizeOfStackCommit
 times 1024 - ($ - $$) db 0
