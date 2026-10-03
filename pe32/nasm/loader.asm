@@ -33,4 +33,5 @@ dd 0x00                     ; SizeOfImage
 dd 0x0200                   ; SizeOfHeaders (512)
 dd 0x00                     ; CheckSum
 dw 0x0A                     ; Subsystem (IMAGE_SUBSYSTEM_EFI_APPLICATION)
+dw 0x00                     ; DllCharacteristics
 times 1024 - ($ - $$) db 0
