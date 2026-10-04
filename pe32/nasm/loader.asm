@@ -36,4 +36,5 @@ dw 0x0A                     ; Subsystem (IMAGE_SUBSYSTEM_EFI_APPLICATION)
 dw 0x00                     ; DllCharacteristics
 dq 0x00                     ; SizeOfStackReserve
 dq 0x00                     ; SizeOfStackCommit
+dq 0x00                     ; SizeOfHeapReserve
 times 1024 - ($ - $$) db 0
