@@ -41,4 +41,5 @@ dq 0x00                     ; SizeOfHeapCommit
 dd 0x00                     ; LoaderFlags
 dd 0x00                     ; NumberOfRvaAndSizes
 dq 0x747865742E             ; Name (.text)
+dd 0x00                     ; VirtualSize
 times 1024 - ($ - $$) db 0
