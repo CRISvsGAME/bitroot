@@ -39,4 +39,5 @@ dq 0x00                     ; SizeOfStackCommit
 dq 0x00                     ; SizeOfHeapReserve
 dq 0x00                     ; SizeOfHeapCommit
 dd 0x00                     ; LoaderFlags
+dd 0x00                     ; NumberOfRvaAndSizes
 times 1024 - ($ - $$) db 0
