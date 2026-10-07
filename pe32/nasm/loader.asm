@@ -46,4 +46,5 @@ dd 0x1000                   ; VirtualAddress (4096)
 dd 0x0200                   ; SizeOfRawData (512)
 dd 0x0200                   ; PointerToRawData (512)
 dd 0x00                     ; PointerToRelocations
+dd 0x00                     ; PointerToLinenumbers
 times 1024 - ($ - $$) db 0
