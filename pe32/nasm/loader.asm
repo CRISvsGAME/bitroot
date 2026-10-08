@@ -48,4 +48,5 @@ dd 0x0200                   ; PointerToRawData (512)
 dd 0x00                     ; PointerToRelocations
 dd 0x00                     ; PointerToLinenumbers
 dw 0x00                     ; NumberOfRelocations
+dw 0x00                     ; NumberOfLinenumbers
 times 1024 - ($ - $$) db 0
