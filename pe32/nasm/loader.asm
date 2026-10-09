@@ -14,7 +14,7 @@ dw 0x02                     ; Characteristics (IMAGE_FILE_EXECUTABLE_IMAGE)
 dw 0x020B                   ; Magic (PE32+)
 db 0x00                     ; MajorLinkerVersion
 db 0x00                     ; MinorLinkerVersion
-dd 0x00                     ; SizeOfCode
+dd 0x0200                   ; SizeOfCode (512)
 dd 0x00                     ; SizeOfInitializedData
 dd 0x00                     ; SizeOfUninitializedData
 dd 0x00                     ; AddressOfEntryPoint
