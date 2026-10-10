@@ -6,7 +6,7 @@ dd 0x40                     ; PE Header Offset (64)
 dd 0x4550                   ; PE Signature (PE\0\0)
 dw 0x8664                   ; Machine (IMAGE_FILE_MACHINE_AMD64)
 dw 0x01                     ; NumberOfSections (1)
-dd 0x00                     ; TimeDateStamp (0)
+dd 0x00                     ; TimeDateStamp
 dd 0x00                     ; PointerToSymbolTable
 dd 0x00                     ; NumberOfSymbols
 dw 0x70                     ; SizeOfOptionalHeader (112)
@@ -17,7 +17,7 @@ db 0x00                     ; MinorLinkerVersion
 dd 0x0200                   ; SizeOfCode (512)
 dd 0x00                     ; SizeOfInitializedData
 dd 0x00                     ; SizeOfUninitializedData
-dd 0x00                     ; AddressOfEntryPoint
+dd 0x1000                   ; AddressOfEntryPoint (4096)
 dd 0x00                     ; BaseOfCode
 dq 0x00                     ; ImageBase
 dd 0x1000                   ; SectionAlignment (4096)
