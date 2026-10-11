@@ -18,7 +18,7 @@ dd 0x0200                   ; SizeOfCode (512)
 dd 0x00                     ; SizeOfInitializedData
 dd 0x00                     ; SizeOfUninitializedData
 dd 0x1000                   ; AddressOfEntryPoint (4096)
-dd 0x00                     ; BaseOfCode
+dd 0x1000                   ; BaseOfCode (4096)
 dq 0x00                     ; ImageBase
 dd 0x1000                   ; SectionAlignment (4096)
 dd 0x0200                   ; FileAlignment (512)
