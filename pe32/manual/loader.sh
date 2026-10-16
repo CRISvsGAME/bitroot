@@ -50,4 +50,4 @@ printf '\x00\x00\x00\x00' | dd of="$LOADER" bs=1 seek=228 conv=notrunc
 printf '\x00\x00' | dd of="$LOADER" bs=1 seek=232 conv=notrunc
 printf '\x00\x00' | dd of="$LOADER" bs=1 seek=234 conv=notrunc
 printf '\x20\x00\x00\x60' | dd of="$LOADER" bs=1 seek=236 conv=notrunc
-printf '\x31\xC0\xC3' | dd of="$LOADER" bs=1 seek=512 conv=notrunc
+printf '\x51\x52\x5A\x59\x31\xC0\xC3' | dd of="$LOADER" bs=1 seek=512 conv=notrunc
