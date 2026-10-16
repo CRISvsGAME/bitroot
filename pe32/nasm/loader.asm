@@ -41,7 +41,7 @@ dq 0x00                     ; SizeOfHeapCommit
 dd 0x00                     ; LoaderFlags
 dd 0x00                     ; NumberOfRvaAndSizes
 dq 0x747865742E             ; Name (.text)
-dd 0x00                     ; VirtualSize
+dd 0x0200                   ; VirtualSize (512)
 dd 0x1000                   ; VirtualAddress (4096)
 dd 0x0200                   ; SizeOfRawData (512)
 dd 0x0200                   ; PointerToRawData (512)
