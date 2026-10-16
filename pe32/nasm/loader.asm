@@ -50,4 +50,7 @@ dd 0x00                     ; PointerToLinenumbers
 dw 0x00                     ; NumberOfRelocations
 dw 0x00                     ; NumberOfLinenumbers
 dd 0x60000020               ; Characteristics (IMAGE_SCN_CNT_CODE, IMAGE_SCN_MEM_EXECUTE, IMAGE_SCN_MEM_READ)
+times 512 - ($ - $$) db 0
+xor eax, eax
+ret
 times 1024 - ($ - $$) db 0
