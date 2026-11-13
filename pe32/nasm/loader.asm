@@ -29,7 +29,7 @@ dw 0x00                     ; MinorImageVersion
 dw 0x00                     ; MajorSubsystemVersion
 dw 0x00                     ; MinorSubsystemVersion
 dd 0x00                     ; Win32VersionValue
-dd 0x00                     ; SizeOfImage
+dd 0x2000                   ; SizeOfImage (8192)
 dd 0x0200                   ; SizeOfHeaders (512)
 dd 0x00                     ; CheckSum
 dw 0x0A                     ; Subsystem (IMAGE_SUBSYSTEM_EFI_APPLICATION)
